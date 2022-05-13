@@ -3,7 +3,7 @@ import { setContext } from "@apollo/client/link/context";
 
 const httpLink = createHttpLink({
   uri: process.env.REACT_APP_NOT_API_URL,
-});
+})
 
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
